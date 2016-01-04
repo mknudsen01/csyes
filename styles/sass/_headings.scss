@@ -1,0 +1,25 @@
+$heading-size-1: 48px !default;
+$heading-size-2: 36px !default;
+$heading-size-3: 30px !default;
+$heading-size-4: 24px !default;
+$heading-size-5: 18px !default;
+$heading-size-6: 16px !default;
+
+h1 {
+  @include font-size($heading-size-1);
+}
+h2 {
+  @include font-size($heading-size-2);
+}
+h3 {
+  @include font-size($heading-size-3);
+}
+h4 {
+  @include font-size($heading-size-4);
+}
+h5 {
+  @include font-size($heading-size-5);
+}
+h6 {
+  @include font-size($heading-size-6);
+}
