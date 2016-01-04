@@ -1,0 +1,6 @@
+// High-level variables to set up typography classes
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$base-text-color: map-get(map-get($colors, "grey"), "800");
+$base-background-color: map-get(map-get($colors, "white"), "500");
