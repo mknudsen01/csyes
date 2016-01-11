@@ -1,8 +1,14 @@
 @import 'variables/colors';
 @import 'variables/typography';
+@import 'variables/breakpoints';
 
 @import 'tools/mixins';
+@import 'tools/widths';
+@import 'tools/media-query';
 
 @import 'colors';
 @import 'page';
 @import 'headings';
+@import 'layout';
+@import 'widths';
+@import 'widths-responsive';

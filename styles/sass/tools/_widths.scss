@@ -1,0 +1,21 @@
+@mixin widths($columns, $breakpoint: null) {
+  @if ($breakpoint) {
+    $breakpoint-modifier: '--' !global;
+  } @else {
+    $breakpoint-modifier: '' !global;
+  }
+
+  @each $denominator in $columns {
+    @if ($denominator == 1 ) {
+      .#{$breakpoint}#{$breakpoint-modifier}col-1-1 {
+        width: 100% !important;
+      }
+    } @else {
+      @for $numerator from 1 to $denominator {
+        .#{$breakpoint}#{$breakpoint-modifier}col-#{$numerator}-#{$denominator} {
+          width: ($numerator / $denominator) * 100% !important;
+        }
+      }
+    }
+  }
+}

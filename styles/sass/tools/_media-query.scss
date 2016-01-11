@@ -1,0 +1,19 @@
+@mixin media-query($query) {
+  $query-found: false;
+
+  @each $name, $condition in $breakpoints {
+
+    @if $query == $name and $condition {
+      $query-found: true;
+
+      @media #{$condition} {
+        @content;
+      }
+    }
+  }
+
+  // If the user specifies a non-existent breakpoint name, alert them.
+  @if $query-found == false{
+    @warn "Breakpoint ‘#{$query}’ does not exist."
+  }
+}
