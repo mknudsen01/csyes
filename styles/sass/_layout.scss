@@ -4,6 +4,14 @@ $gutter--narrow:   round($gutter / 2);
 $gutter--wide:     round($gutter * 2);
 $gutter--wider:    round($gutter * 4);
 
+$max-width: 1200px + (2 * $gutter);
+
+.container {
+  max-width: $max-width;
+  padding: 0 $gutter;
+  margin: 0 auto;
+}
+
 .row {
   list-style: none;
   padding: 0;
