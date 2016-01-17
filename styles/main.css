@@ -1542,6 +1542,7 @@
 
 html {
   font-size: 1em;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: #FFFFFF;
   color: #424242;
@@ -1586,6 +1587,16 @@ h5 {
   line-height: 1.33333; }
 
 h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+p,
+ul,
+div,
+span,
+input,
+textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
