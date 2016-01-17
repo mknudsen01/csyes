@@ -1962,6 +1962,24 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
+.text--center {
+  text-align: center; }
+
+.text--left {
+  text-align: left; }
+
+.text--right {
+  text-align: right; }
+
+.text--underline {
+  text-decoration: underline; }
+
+.text--italic {
+  font-style: italic; }
+
+.text--bold {
+  font-style: bold; }
+
 .container {
   max-width: 1248px;
   padding: 0 24px;

@@ -8,3 +8,23 @@ input,
 textarea {
   @include font-size($font-size);
 }
+
+.text--center {
+  text-align: center;
+}
+.text--left {
+  text-align: left;
+}
+.text--right {
+  text-align: right;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+.text--italic {
+  font-style: italic;
+}
+.text--bold {
+  font-style: bold;
+}
