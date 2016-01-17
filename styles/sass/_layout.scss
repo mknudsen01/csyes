@@ -4,7 +4,16 @@ $gutter--narrow:   round($gutter / 2);
 $gutter--wide:     round($gutter * 2);
 $gutter--wider:    round($gutter * 4);
 
+$max-width: 1200px + (2 * $gutter);
+
+.container {
+  max-width: $max-width;
+  padding: 0 $gutter;
+  margin: 0 auto;
+}
+
 .row {
+  font-size: 0;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -13,6 +22,7 @@ $gutter--wider:    round($gutter * 4);
 
 .row__item {
   display: inline-block;
+  font-size: 0;
   padding-left: $gutter;
   vertical-align: top;
   width: 100%;
