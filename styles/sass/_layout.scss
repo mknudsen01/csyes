@@ -13,6 +13,7 @@ $max-width: 1200px + (2 * $gutter);
 }
 
 .row {
+  font-size: 0;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -21,6 +22,7 @@ $max-width: 1200px + (2 * $gutter);
 
 .row__item {
   display: inline-block;
+  font-size: 0;
   padding-left: $gutter;
   vertical-align: top;
   width: 100%;
