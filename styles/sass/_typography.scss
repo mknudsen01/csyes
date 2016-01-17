@@ -1,0 +1,10 @@
+$font-size: $base-font-size;
+
+p,
+ul,
+div,
+span,
+input,
+textarea {
+  @include font-size($font-size);
+}
