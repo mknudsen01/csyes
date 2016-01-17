@@ -324,6 +324,36 @@ $transparent: (
   '500' : transparent
 );
 
+$primary: (
+  '500':    map-get($purple-deep, '500'),
+  'dark':   map-get($purple-deep, '800'),
+  'light':  map-get($purple-deep, '100'),
+);
+
+$accent: (
+  '500':    map-get($cyan, '500'),
+  'dark':   map-get($cyan, '800'),
+  'light':  map-get($cyan, '100'),
+);
+
+$danger: (
+  '500':    map-get($red, '500'),
+  'dark':   map-get($red, '800'),
+  'light':  map-get($red, '100'),
+);
+
+$warning: (
+  '500':    map-get($amber, '500'),
+  'dark':   map-get($amber, '800'),
+  'light':  map-get($amber, '100'),
+);
+
+$success: (
+  '500':    map-get($green-light, 'a200'),
+  'dark':   map-get($green-light, 'a700'),
+  'light':  map-get($green-light, 'a100'),
+);
+
 $colors: (
   'red'         : $red,
   'pink'        : $pink,
@@ -346,5 +376,10 @@ $colors: (
   'blue-grey'   : $blue-grey,
   'black'       : $black,
   'white'       : $white,
-  'transparent' : $transparent
+  'transparent' : $transparent,
+  'primary'     : $primary,
+  'accent'      : $accent,
+  'danger'      : $danger,
+  'warning'     : $warning,
+  'success'     : $success
 );

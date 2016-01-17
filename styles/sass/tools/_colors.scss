@@ -1,0 +1,19 @@
+@mixin colors($color-name, $color-modifier, $value) {
+  // 500 is considered the 'base' for each color
+  @if $color-modifier == '500' {
+    .color--#{$color-name} {
+      color: $value;
+    }
+    .bg-color--#{$color-name} {
+      background-color: $value;
+    }
+  }
+  @else {
+    .color--#{$color-name}-#{$color-modifier} {
+      color: $value;
+    }
+    .bg-color--#{$color-name}-#{$color-modifier} {
+      background-color: $value;
+    }
+  }
+}
