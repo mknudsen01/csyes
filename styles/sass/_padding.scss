@@ -1,0 +1,45 @@
+$padding--base: $base-spacing-unit;
+$padding--xs:   round($padding--base / 4);
+$padding--s:    round($padding--base / 2);
+$padding--l:    round($padding--base * 2);
+$padding--xl:   round($padding--base * 4);
+
+.p      { padding:        $padding--base !important;    }
+.pt     { padding-top:    $padding--base !important;    }
+.pr     { padding-right:  $padding--base !important;    }
+.pb     { padding-bottom: $padding--base !important;    }
+.pl     { padding-left:   $padding--base !important;    }
+.pv     { padding-top:    $padding--base !important; padding-bottom: $padding--base !important; }
+.ph     { padding-right:  $padding--base !important; padding-left:   $padding--base !important; }
+
+.p--    { padding:        $padding--xs !important;    }
+.pt--   { padding-top:    $padding--xs !important;    }
+.pr--   { padding-right:  $padding--xs !important;    }
+.pb--   { padding-bottom: $padding--xs !important;    }
+.pl--   { padding-left:   $padding--xs !important;    }
+.pv--   { padding-top:    $padding--xs !important; padding-bottom: $padding--xs !important; }
+.ph--   { padding-right:  $padding--xs !important; padding-left:   $padding--xs !important; }
+
+.p-     { padding:        $padding--s !important;    }
+.pt-    { padding-top:    $padding--s !important;    }
+.pr-    { padding-right:  $padding--s !important;    }
+.pb-    { padding-bottom: $padding--s !important;    }
+.pl-    { padding-left:   $padding--s !important;    }
+.pv-    { padding-top:    $padding--s !important; padding-bottom: $padding--s !important; }
+.ph-    { padding-right:  $padding--s !important; padding-left:   $padding--s !important; }
+
+.p\+    { padding:        $padding--l !important;    }
+.pt\+   { padding-top:    $padding--l !important;    }
+.pr\+   { padding-right:  $padding--l !important;    }
+.pb\+   { padding-bottom: $padding--l !important;    }
+.pl\+   { padding-left:   $padding--l !important;    }
+.pv\+   { padding-top:    $padding--l !important; padding-bottom: $padding--l !important; }
+.ph\+   { padding-right:  $padding--l !important; padding-left:   $padding--l !important; }
+
+.p\+\+  { padding:        $padding--xl !important;    }
+.pt\+\+ { padding-top:    $padding--xl !important;    }
+.pr\+\+ { padding-right:  $padding--xl !important;    }
+.pb\+\+ { padding-bottom: $padding--xl !important;    }
+.pl\+\+ { padding-left:   $padding--xl !important;    }
+.pv\+\+ { padding-top:    $padding--xl !important; padding-bottom: $padding--xl !important; }
+.ph\+\+ { padding-right:  $padding--xl !important; padding-left:   $padding--xl !important; }
