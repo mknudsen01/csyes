@@ -1,0 +1,78 @@
+$color-white: map-get(map-get($colors, 'white'), '500');
+
+@mixin button($main-color, $hover-color, $focus-color) {
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background-color: $main-color;
+  font-size: $base-font-size;
+  transition: 0.3s all ease;
+  padding: round($base-spacing-unit/4) round($base-spacing-unit/2);
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  white-space: nowrap;
+  line-height: normal;
+
+  &:hover,
+  &.hover {
+    background-color: $hover-color;
+  }
+  &:focus,
+  &.focus {
+    outline: $focus-color;
+    background-color: $focus-color;
+  }
+  &:disabled,
+  &.disabled {
+    background-color: map-get(map-get($colors, 'grey'), '300');
+    color: map-get(map-get($colors, 'grey'), '800');
+    cursor: not-allowed;
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      background-color: map-get(map-get($colors, 'grey'), '300');
+      color: map-get(map-get($colors, 'grey'), '800');
+      cursor: not-allowed;
+    }
+  }
+}
+
+@mixin button-clear($main-color, $hover-color, $focus-color) {
+  background-color: $color-white;
+  color: $main-color;
+  border: 1px solid $main-color;
+  &:hover,
+  &.hover {
+    color: $color-white;
+    background-color: $hover-color;
+    border-color: $hover-color;
+
+  }
+  &:focus,
+  &.focus {
+    outline: $focus-color;
+    color: $color-white;
+    background-color: $focus-color;
+    border-color: $focus-color;
+
+  }
+  &:disabled,
+  &.disabled {
+    background-color: $color-white;
+    color: map-get(map-get($colors, 'grey'), '300');
+    color: map-get(map-get($colors, 'grey'), '800');
+    cursor: not-allowed;
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      background-color: map-get(map-get($colors, 'grey'), '300');
+      color: $color-white;
+      cursor: not-allowed;
+    }
+  }
+}
