@@ -1,0 +1,61 @@
+$color-default: map-get(map-get($colors, 'grey'), '500');
+$color-default-hover: map-get(map-get($colors, 'grey'), '700');
+$color-default-focus: map-get(map-get($colors, 'grey'), '800');
+$color-primary: map-get(map-get($colors, 'primary'), '500');
+$color-primary-hover: map-get(map-get($colors, 'primary'), '700');
+$color-primary-focus: map-get(map-get($colors, 'primary'), '800');
+$color-accent: map-get(map-get($colors, 'accent'), '500');
+$color-accent-hover: map-get(map-get($colors, 'accent'), '700');
+$color-accent-focus: map-get(map-get($colors, 'accent'), '800');
+$color-danger: map-get(map-get($colors, 'danger'), '500');
+$color-danger-hover: map-get(map-get($colors, 'danger'), '700');
+$color-danger-focus: map-get(map-get($colors, 'danger'), '800');
+$color-success: map-get(map-get($colors, 'success'), '500');
+$color-success-hover: map-get(map-get($colors, 'success'), '700');
+$color-success-focus: map-get(map-get($colors, 'success'), '800');
+$color-warning: map-get(map-get($colors, 'warning'), '500');
+$color-warning-hover: map-get(map-get($colors, 'warning'), '700');
+$color-warning-focus: map-get(map-get($colors, 'warning'), '800');
+
+.btn {
+  @include button($color-default, $color-default-hover, $color-default-focus);
+}
+.btn--primary {
+  @include button($color-primary, $color-primary-hover, $color-primary-focus);
+}
+.btn--accent {
+  @include button($color-accent, $color-accent-hover, $color-accent-focus);
+}
+.btn--success {
+  @include button($color-success, $color-success-hover, $color-success-focus);
+}
+.btn--warning {
+  @include button($color-warning, $color-warning-hover, $color-warning-focus);
+}
+.btn--danger {
+  @include button($color-danger, $color-danger-hover, $color-danger-focus);
+}
+
+
+.btn--clear {
+  @include button-clear($color-default, $color-default-hover, $color-default-focus);
+}
+.btn--primary-clear {
+  @include button-clear($color-primary, $color-primary-hover, $color-primary-focus);
+}
+.btn--accent-clear {
+  @include button-clear($color-accent, $color-accent-hover, $color-accent-focus);
+}
+.btn--success-clear {
+  @include button-clear($color-success, $color-success-hover, $color-success-focus);
+}
+.btn--warning-clear {
+  @include button-clear($color-warning, $color-warning-hover, $color-warning-focus);
+}
+.btn--danger-clear {
+  @include button-clear($color-danger, $color-danger-hover, $color-danger-focus);
+}
+
+.btn--round {
+  border-radius: 5px;
+}
