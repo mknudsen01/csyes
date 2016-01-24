@@ -324,35 +324,15 @@ $transparent: (
   '500' : transparent
 );
 
-$primary: (
-  '500':    map-get($purple-deep, '500'),
-  'dark':   map-get($purple-deep, '800'),
-  'light':  map-get($purple-deep, '100'),
-);
+$primary: $purple-deep;
 
-$accent: (
-  '500':    map-get($cyan, '500'),
-  'dark':   map-get($cyan, '800'),
-  'light':  map-get($cyan, '100'),
-);
+$accent: $cyan;
 
-$danger: (
-  '500':    map-get($red, '500'),
-  'dark':   map-get($red, '800'),
-  'light':  map-get($red, '100'),
-);
+$danger: $red;
 
-$warning: (
-  '500':    map-get($amber, '500'),
-  'dark':   map-get($amber, '800'),
-  'light':  map-get($amber, '100'),
-);
+$warning: $amber;
 
-$success: (
-  '500':    map-get($green-light, 'a200'),
-  'dark':   map-get($green-light, 'a700'),
-  'light':  map-get($green-light, 'a100'),
-);
+$success: $green-light;
 
 $colors: (
   'red'         : $red,
