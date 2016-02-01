@@ -1,20 +1,8 @@
 $color-white: map-get(map-get($colors, 'white'), '500');
 
-@mixin button($main-color, $hover-color, $focus-color) {
+@mixin button-color($main-color, $hover-color, $focus-color) {
   color: $color-white;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
   background-color: $main-color;
-  font-size: $base-font-size;
-  transition: 0.3s all ease;
-  padding: round($base-spacing-unit/4) round($base-spacing-unit/2);
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-  white-space: nowrap;
-  line-height: normal;
 
   &:hover,
   &.hover {
@@ -41,7 +29,7 @@ $color-white: map-get(map-get($colors, 'white'), '500');
   }
 }
 
-@mixin button-clear($main-color, $hover-color, $focus-color) {
+@mixin button-clear-color($main-color, $hover-color, $focus-color) {
   background-color: $color-white;
   color: $main-color;
   border: 1px solid $main-color;
