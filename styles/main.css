@@ -356,12 +356,10 @@ td,
 th {
   padding: 0; }
 
-.btn {
-  color: #FFFFFF;
+.button, .btn, .btn--primary, .btn--accent, .btn--success, .btn--warning, .btn--danger, .btn--clear, .btn--primary-clear, .btn--accent-clear, .btn--success-clear, .btn--warning-clear, .btn--danger-clear {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  background-color: #9E9E9E;
   font-size: 16px;
   transition: 0.3s all ease;
   padding: 6px 12px;
@@ -371,6 +369,10 @@ th {
   margin: 0;
   white-space: nowrap;
   line-height: normal; }
+
+.btn {
+  color: #FFFFFF;
+  background-color: #9E9E9E; }
   .btn:hover, .btn.hover {
     background-color: #616161; }
   .btn:focus, .btn.focus {
@@ -387,19 +389,7 @@ th {
 
 .btn--primary {
   color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #673AB7;
-  font-size: 16px;
-  transition: 0.3s all ease;
-  padding: 6px 12px;
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-  white-space: nowrap;
-  line-height: normal; }
+  background-color: #673AB7; }
   .btn--primary:hover, .btn--primary.hover {
     background-color: #512DA8; }
   .btn--primary:focus, .btn--primary.focus {
@@ -416,19 +406,7 @@ th {
 
 .btn--accent {
   color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #00BCD4;
-  font-size: 16px;
-  transition: 0.3s all ease;
-  padding: 6px 12px;
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-  white-space: nowrap;
-  line-height: normal; }
+  background-color: #00BCD4; }
   .btn--accent:hover, .btn--accent.hover {
     background-color: #0097A7; }
   .btn--accent:focus, .btn--accent.focus {
@@ -445,19 +423,7 @@ th {
 
 .btn--success {
   color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #8BC34A;
-  font-size: 16px;
-  transition: 0.3s all ease;
-  padding: 6px 12px;
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-  white-space: nowrap;
-  line-height: normal; }
+  background-color: #8BC34A; }
   .btn--success:hover, .btn--success.hover {
     background-color: #689F38; }
   .btn--success:focus, .btn--success.focus {
@@ -474,19 +440,7 @@ th {
 
 .btn--warning {
   color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #FFC107;
-  font-size: 16px;
-  transition: 0.3s all ease;
-  padding: 6px 12px;
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-  white-space: nowrap;
-  line-height: normal; }
+  background-color: #FFC107; }
   .btn--warning:hover, .btn--warning.hover {
     background-color: #FFA000; }
   .btn--warning:focus, .btn--warning.focus {
@@ -503,19 +457,7 @@ th {
 
 .btn--danger {
   color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #F44336;
-  font-size: 16px;
-  transition: 0.3s all ease;
-  padding: 6px 12px;
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-  white-space: nowrap;
-  line-height: normal; }
+  background-color: #F44336; }
   .btn--danger:hover, .btn--danger.hover {
     background-color: #D32F2F; }
   .btn--danger:focus, .btn--danger.focus {
