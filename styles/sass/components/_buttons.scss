@@ -17,43 +17,69 @@ $color-warning: map-get(map-get($colors, 'warning'), '500');
 $color-warning-hover: map-get(map-get($colors, 'warning'), '700');
 $color-warning-focus: map-get(map-get($colors, 'warning'), '800');
 
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: $base-font-size;
+  transition: 0.3s all ease;
+  padding: round($base-spacing-unit/4) round($base-spacing-unit/2);
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  white-space: nowrap;
+  line-height: normal;
+}
+
 .btn {
-  @include button($color-default, $color-default-hover, $color-default-focus);
+  @extend .button;
+  @include button-color($color-default, $color-default-hover, $color-default-focus);
 }
 .btn--primary {
-  @include button($color-primary, $color-primary-hover, $color-primary-focus);
+  @extend .button;
+  @include button-color($color-primary, $color-primary-hover, $color-primary-focus);
 }
 .btn--accent {
-  @include button($color-accent, $color-accent-hover, $color-accent-focus);
+  @extend .button;
+  @include button-color($color-accent, $color-accent-hover, $color-accent-focus);
 }
 .btn--success {
-  @include button($color-success, $color-success-hover, $color-success-focus);
+  @extend .button;
+  @include button-color($color-success, $color-success-hover, $color-success-focus);
 }
 .btn--warning {
-  @include button($color-warning, $color-warning-hover, $color-warning-focus);
+  @extend .button;
+  @include button-color($color-warning, $color-warning-hover, $color-warning-focus);
 }
 .btn--danger {
-  @include button($color-danger, $color-danger-hover, $color-danger-focus);
+  @extend .button;
+  @include button-color($color-danger, $color-danger-hover, $color-danger-focus);
 }
-
 
 .btn--clear {
-  @include button-clear($color-default, $color-default-hover, $color-default-focus);
+  @extend .button;
+  @include button-clear-color($color-default, $color-default-hover, $color-default-focus);
 }
 .btn--primary-clear {
-  @include button-clear($color-primary, $color-primary-hover, $color-primary-focus);
+  @extend .button;
+  @include button-clear-color($color-primary, $color-primary-hover, $color-primary-focus);
 }
 .btn--accent-clear {
-  @include button-clear($color-accent, $color-accent-hover, $color-accent-focus);
+  @extend .button;
+  @include button-clear-color($color-accent, $color-accent-hover, $color-accent-focus);
 }
 .btn--success-clear {
-  @include button-clear($color-success, $color-success-hover, $color-success-focus);
+  @extend .button;
+  @include button-clear-color($color-success, $color-success-hover, $color-success-focus);
 }
 .btn--warning-clear {
-  @include button-clear($color-warning, $color-warning-hover, $color-warning-focus);
+  @extend .button;
+  @include button-clear-color($color-warning, $color-warning-hover, $color-warning-focus);
 }
 .btn--danger-clear {
-  @include button-clear($color-danger, $color-danger-hover, $color-danger-focus);
+  @extend .button;
+  @include button-clear-color($color-danger, $color-danger-hover, $color-danger-focus);
 }
 
 .btn--round {
